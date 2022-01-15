@@ -10,9 +10,7 @@ const userSchema = new mongoose.Schema(
     cover_photo: { type: String, required: true },
     tech_stack: [{ type: String, required: true }],
     github: { type: String, required: true },
-    projects: [
-      { type: mongoose.Schema.Types.ObjectId, ref: "project", required: true },
-    ],
+    projects: [{ type: mongoose.Schema.Types.ObjectId, ref: "project" }],
   },
   {
     versionKey: false,
