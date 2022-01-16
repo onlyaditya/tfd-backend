@@ -7,7 +7,7 @@ const projectController = require("./controllers/project.controller");
 const recommendationController = require("./controllers/recommendation.controller");
 
 app.use(express.json());
-app.use("./recommendations", recommendationController);
+app.use("/recommendations", recommendationController);
 app.use("/users", userController);
 app.use("/projects", projectController);
 
