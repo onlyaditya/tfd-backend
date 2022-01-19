@@ -4,7 +4,7 @@ const crudController = require("./crud.controller");
 
 const router = express.Router();
 
-// router.get("", crudController(User).getAll);
+router.get("", crudController(User).getAll);
 
 router.get("/:id", crudController(User).getOne);
 
