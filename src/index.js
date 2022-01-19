@@ -31,7 +31,7 @@ app.get("/failure", (req, res) => {
 });
 
 app.use("/recommendations", recommendationController);
-// app.use("/users", userController);
+app.use("/users", userController);
 app.use("/projects", projectController);
 
 module.exports = app;
