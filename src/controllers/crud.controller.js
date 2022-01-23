@@ -67,7 +67,7 @@ const deleteItem = (model, populateParams) => async (req, res) => {
 };
 
 module.exports = (model, populateParams = []) => ({
-  getOne: getOne(model.populateParams),
+  getOne: getOne(model, populateParams),
   getAll: getAll(model, populateParams),
   post: post(model, populateParams),
   updateItem: updateItem(model, populateParams),
